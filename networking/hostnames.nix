@@ -1,4 +1,4 @@
 { config, pkgs, ... }:
 {
-  networking.hostName = "wangoenixos";
+  networking.hostName = "nixossetup";
 }

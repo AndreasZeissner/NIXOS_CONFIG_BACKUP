@@ -3,7 +3,7 @@
   networking.interfaces = [
     {
       name      = "enp0s8"; 
-      ipAddress    = "192.168.56.55";
+      ipAddress    = "176.16.16.16";
       prefixLength = 24;
     }
   ];

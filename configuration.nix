@@ -9,7 +9,7 @@
       ./networking/hostnames.nix
       ./networking/network-interfaces.nix
       ./policystuff/default.nix
-      ./virtualisation/vagrant/vagrant-packages.nix
+#      ./virtualisation/vagrant/vagrant-packages.nix
 #      ./virtualisation/vagrant/vagrant-user.nix
       #./usersgroups/default.nix
     ];
@@ -30,4 +30,6 @@
 
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "15.09";
+
+
 }
