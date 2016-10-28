@@ -41,11 +41,15 @@ environment.systemPackages = with pkgs; [
                 let g:NERDTreeWinSize = 50
                 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
                 nnoremap <silent> <F2> :NERDTreeFind<CR>
+                let g:syntastic_always_populate_loc_list=1
+                let g:syntastic_auto_loc_list=1
+                let g:syntastic_aggregate_errors = 1
+                let g:molokai_original = 1
               '';
               vimrcConfig.vam.knownPlugins = pkgs.vimPlugins;
               vimrcConfig.vam.pluginDictionaries = [
               { names = [
-                "nerdtree" "vim-nerdtree-tabs" "syntastic"
+                "nerdtree" "vim-nerdtree-tabs" "syntastic" "vim-addon-nix" "vimwiki" "molokai" "calendar"
               ]; }
             ];
           }
